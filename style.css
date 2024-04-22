@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 5px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 190px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: cadetblue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 15%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 15px;
+}
+.version-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 90%;
+    cursor: pointer;
+
+}
+
+.git {
+    width: 35px;
+}
+
+
+/* -------------------------------ABOUT---------------------- */
+
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* space btwn img and about me txt */
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 55px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.about-txt {
+    margin-top: 10px;
+    font-weight: 250;
+    text-indent: 40px;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: cadetblue;
+    position: absolute;
+    left:0;
+    bottom: -7px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 100%;
+}
+
+
+.tab-contents ul li  {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-contents ul li span {
+    color: cadetblue;
+    font-size: 14px;
+}
+
+
+.tab-contents {
+    display: none;
+}
+
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 5px 3%;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .version-con {
+        margin-right: 85%;
+    }
+
+    .git {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sub-title {
+        font-size: 40px;
+    }
+
+    .about-txt {
+        text-indent: 20px;
+    }
+
+    .tab-links {
+        margin-right: 30px;
+    }
+}

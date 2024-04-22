@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo1.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Porfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="version-con">
+                <img src="assets/github (1).svg" class="git" id = "githubLink" >
+                <img src="assets/square-github.svg" class="git" id = "github">
+                <img src="assets/square-x-twitter.svg" class="git" id = "twitter">
+            </div>
+            
+
+            <div class="header-text">
+                <p>AI/ML Engineer</p>
+                <h1>Hi, I'm <br>Felix From Kenya</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------about-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/user2.jpg" alt="user">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-txt">I'm a passionate AI/ML engineer with a knack for full-stack development,
+                        dedicated to leveraging cutting-edge technology to solve real-world problems. With a strong
+                        foundation in machine learning algorithms, data analysis, and software engineering, I thrive on
+                        building end-to-end solutions that seamlessly integrate AI capabilities into robust
+                        applications.
+
+                        Driven by curiosity and a relentless pursuit of excellence.</p>
+
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links  active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br>Implementing algorithms, manipulating data, and
+                                building AI applications in Python.</li>
+                            <li><span>Machine Learning Algorithms:</span><br>Knowledge of various machine learning
+                                algorithms, including supervised learning (e.g., regression, classification),
+                                unsupervised learning (e.g., clustering, dimensionality reduction).</li>
+                            <li><span>Deep Learning:</span><br>Familiarity with deep learning techniques and frameworks
+                                like TensorFlow, PyTorch, or Keras for building neural networks, convolutional neural
+                                networks (CNNs), recurrent neural networks (RNNs), and other deep learning
+                                architectures.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Code3camp:</span><br>DataScience and MachineLearning.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+        // var tablinks = document.getElementsByClassName("tab-links");
+        // var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // function opentab(tabname) {
+        //     for (tablink of tablinks) {
+        //         tablink.classList.remove("active-link");
+        //     }
+        //     for (tabcontent of tabcontents) {
+        //         tabcontent.classList.remove("active-tab");
+        //     }
+
+        //     event.currentTarget.classList.add("active-link");
+        //     document.getElementById(tabname).classList.add("active-tab");
+        // }
+    </script>
+</body>
+
+</html>
